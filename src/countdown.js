@@ -19,7 +19,7 @@ function countdownTimer(startTime, interval) {
     console.log(remainingTime); // Log the remaining time
     remainingTime--;
 
-    if (remainingTime < 0) { // Stop the timer when time reaches 0
+    if (remainingTime <= 0) { // Stop the timer when time reaches 0
       clearInterval(timerId);
     };
   }, interval);
